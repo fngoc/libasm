@@ -2,9 +2,11 @@
 
 NAME = libasm.a
 
-MAKE = make
+SRC = ft_strlen.s ft_strcpy.s\
+		ft_strcmp.s ft_write.s\
+		ft_read.s
 
-OBJ = *.o
+OBJ = $(SRC:.s=.o)
 
 DEL = rm -rf
 
@@ -12,14 +14,12 @@ GREEN ='\033[1;32m'
 
 all: $(NAME)
 
-$(NAME):
-	@nasm -f macho64 ft_putchar.s
-	@nasm -f macho64 ft_putstr.s
-	@nasm -f macho64  ft_strlen.s
-	@nasm -f macho64  ft_strcpy.s
+$(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
 	@echo ${GREEN}"libasm is built!"
-	gcc main.c libasm.a
+
+%.o: %.s
+	@nasm -f macho64 $< -o $@
 
 clean:
 	@$(DEL) $(OBJ)
@@ -28,6 +28,6 @@ clean:
 fclean: clean
 	@$(DEL) $(NAME)
 	@$(DEL) $(OBJ)
-	@echo $(GREEN)"All libs cleared."
+	@echo $(GREEN)"library deleted."
 
 re: fclean all
