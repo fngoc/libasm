@@ -11,6 +11,6 @@ _ft_strlen:
 		je .end
 		inc rax
 		jmp .while
-
+		
 .end:			
 		ret

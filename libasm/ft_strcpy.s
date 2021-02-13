@@ -17,4 +17,3 @@ _ft_strcpy:
 .end:
 		mov rax, rdi
 		ret
-		
