@@ -1,33 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libasm.h                                           :+:      :+:    :+:   */
+/*   libasm_bonus.h                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: fngoc <fngoc@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/02/13 11:56:39 by fngoc             #+#    #+#             */
-/*   Updated: 2021/02/14 21:00:57 by fngoc            ###   ########.fr       */
+/*   Created: 2021/02/14 21:01:45 by fngoc             #+#    #+#             */
+/*   Updated: 2021/02/14 21:01:47 by fngoc            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBASM_H
+#ifndef LIBASM_BONUS_H
 
-# define LIBASM_H
+# define LIBASM_BONUS_H
 
 # include <stdio.h>
-# include <unistd.h>
-# include <string.h>
+# include <stdlib.h>
 
-size_t	ft_strlen(char *rdi);
+typedef	struct		s_list
+{
+	void			*data;
+	struct s_list	*next;
+}					t_list;
 
-char	*ft_strcpy(char *rdi, const char *rsi);
-
-int		ft_strcmp(const char *rdi, const char *rsi);
-
-ssize_t	ft_write(int rdi, const void *rsi, size_t rdx);
-
-ssize_t	ft_read(int rdi, void *rsi, size_t rdx);
-
-char	*ft_strdup(const char *rdi);
+int					ft_list_size(t_list *rdi);
 
 #endif
