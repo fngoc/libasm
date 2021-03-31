@@ -1,31 +1,31 @@
 # libasm
 
-## Описание
+## Description
 
-Цель этого проекта - познакомиться с языком Ассемблер.
+A library written in Assembly language that repeats some of the functions of the standard C library.
 
-Компилирование файлов ``.s`` было с флагами: ``nasm -f macho64``.
+Compiling the ``.s`` files was with the flags: ``nasm -f macho64``.
 
-Компилирование файлов ``.c`` было с флагами: ``gcc -Wall -Wextra -Werror``.
+Compiling the ``.c`` files was with the flags: ``gcc -Wall -Wextra -Werror``.
 
-Файлы ``.c`` проходят на ``Norminette``.
+The ``.c`` files pass to ``Norminette``.
 
-## Использование
+## Using
 
-``make`` и ``make all`` собирают библиотеку, или перекомпилирую измененный файл, так же пересобирая библиотеку.
+``make`` и ``make all`` build the library, or recompile the modified file, also recompiling the library.
 
-``make bonus`` собирает библиотеку с бонусами.
+``make bonus`` collects a library with bonuses.
 
-``make re`` удаляет все ``.o`` файлы, удаляет ``libasm.a``, пересобирает библиотеку.
+``make re`` deletes all ``.o`` files, deletes ``libasm.a``, rebuilds the library.
 
-``make clean`` удаляет все ``.o`` файлы.
+``make clean`` deletes all ``.o`` files.
 
-``make fclean`` удаляет все ``.o`` файлы, так же удаляет ``libasm.a``.
-
-## Оценка
-
-![alt tag](media/appraisal_libasm.png "Оценка проекта libasm")
+``make fclean`` deletes all ``.o`` files, also deletes ``libasm.a``.
 
 ## my_test
 
-По заданию вместе с проектом должны идти тестеры функций. Достаточно скомпилировать ``main.c`` и ``main_bonus.c``.
+According to the task, function testers should go along with the project. Just compile ``main.c`` and ``main_bonus.c``.
+
+## Evaluation
+
+![alt tag](media/appraisal_libasm.png "Appraisal libasm")
