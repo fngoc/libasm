@@ -25,7 +25,3 @@ The ``.c`` files pass to ``Norminette``.
 ## my_test
 
 According to the task, function testers should go along with the project. Just compile ``main.c`` and ``main_bonus.c``.
-
-## Evaluation
-
-![alt tag](media/appraisal_libasm.png "Appraisal libasm")
