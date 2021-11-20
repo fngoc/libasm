@@ -10,7 +10,7 @@ Compiling the ``.c`` files was with the flags: ``gcc -Wall -Wextra -Werror``.
 
 The ``.c`` files pass to ``Norminette``.
 
-## Using
+## Usage
 
 ``make`` и ``make all`` build the library, or recompile the modified file, also recompiling the library.
 
